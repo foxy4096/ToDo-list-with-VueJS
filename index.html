@@ -10,9 +10,28 @@
 </head>
 
 <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <h1 class="title is-1">ToDo-List</h1>
+            </a>
+        </div>
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons">
+                    <a class="mx-4" href="https://github.com/foxy4096/ToDo-list-with-VueJS/fork">
+                        <img alt="GitHub forks" src="https://img.shields.io/github/forks/foxy4096/ToDo-list-with-VueJS?style=for-the-badge">
+                    </a>
+                    <a class="mx-4" href="https://github.com/foxy4096/ToDo-list-with-VueJS/stargazers">
+                        <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/foxy4096/ToDo-list-with-VueJS?style=for-the-badge">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
     <section class="section">
         <div class="container">
-            <h1 class="title is-1">ToDo-List</h1>
             <div id="app">
                 <div class="fields">
                     <div class="control">
@@ -24,8 +43,7 @@
                             <button @click="addtodo" class="button is-success">Add ToDo</button>
                         </p>
                         <br>
-                        <h2 class="title is-3">ToDo</h2>
-                        <ol>
+                        <ol class="mx-4">
                             <div v-for="(todo, n) in todos">
 
                                 <li class="todo title is-4">{{ todo }}
@@ -38,7 +56,7 @@
                                                 d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
                                         </svg></button>
                                 </li>
-<hr>
+                                <hr>
                             </div>
                         </ol>
                     </div>
