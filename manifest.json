@@ -1,0 +1,21 @@
+{
+  "name": "TO-DO App With Vue.js",
+  "short_name": "VueDo",
+  "start_url": "index.html",
+  "scope": "./",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-384.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ffd31d",
+  "background_color": "#333",
+  "display": "standalone"
+}
